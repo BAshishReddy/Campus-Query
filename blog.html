@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <style>
+        #font {
+            font-family: "Jersey 25", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: x-large;
+        }
+
+        #font1 {
+            font-family: "Jersey 25", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 60px;
+            color: orange;
+        }
+
+        #font2 {
+            font-family: "Jersey 25", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: x-large;
+        }
+
+
+
+        a {
+            text-decoration: none;
+        }
+
+        .photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            background: linear-gradient(to right, white, rgb(242, 218, 198));
+            /* Peach gradient background */
+            font-family: Arial, sans-serif;
+            /* Use Arial font */
+            border: 2px solid black;
+            /* Black border for the body */
+            padding: 20px;
+            /* Add padding to the body */
+        }
+
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Add subtle shadow effect */
+            transition: box-shadow 0.3s ease;
+            /* Smooth transition on hover */
+            margin-bottom: 20px;
+            /* Increase space between cards */
+            border: 2px solid #ffa879;
+            /* Peach border for the cards */
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            /* Shadow effect on hover */
+        }
+
+        .c {
+            background-color: peachpuff;
+            color: black;
+            /* Text color */
+            font-weight: bold;
+            /* Bold text for header */
+            border: 2px solid #ffa879;
+            /* Peach border for the title section */
+            border-radius: 10px;
+            /* Rounded corners for the title section */
+            padding: 10px;
+            /* Add padding to the title section */
+        }
+
+        /* Adjustments for image placement */
+        .card .card-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row-reverse;
+            /* Image on the right side */
+        }
+
+        .card .card-body img {
+            margin-left: 20px;
+            /* Add margin to the right of the image */
+        }
+
+
+
+        /* Center cards */
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Adjust card text */
+        .card-text {
+            text-align: justify;
+            /* Justify text for better readability */
+        }
+
+        #c {
+            border-radius: 18px;
+        }
+
+        footer {
+            background-color: rgb(235, 222, 198);
+            padding: 20px 0;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            color: rgb(117, 110, 110);
+        }
+
+        .icon {
+            color: rgba(14, 13, 13, 0.641);
+        }
+
+        /* Additional CSS for responsiveness */
+        @media (max-width: 768px) {
+            .col-md-6.offset-md-3 {
+                width: 100%;
+            }
+
+            .col-5,
+            .col-6,
+            .col-1 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .col-5 img {
+                width: 100%;
+                height: auto;
+            }
+
+            .contact-message {
+                text-align: center;
+                margin-top: 30px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar from the previous page -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="cq.html"><img src="cqlogo.jpg" alt="cqlogo" width="210px"></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cq.html" aria-current="page" id="font">HOME
+                            <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" id="font">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" id="font">BLOGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" id="font">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login1.html" id="font">LOG IN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i id="i" class="fa-solid fa-comment-dots fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><br>
+
+    <div class="container">
+        <center>
+            <h2 id="font1">BLOG</h2>
+        </center><br>
+        <div class="row gx-3">
+            
+            <div class="col-md-12 mb-4">
+                <div class="card text-center" id="c" style="background-color: #ffe5cc;">
+                    <!-- Light peach background -->
+                    <div class="card-header c"><span id="font2">SHEKAR KAMMULA</span></div>
+                    <div class="card-body">
+                        <img src="shekar.png" alt="Image 1" class="photo">
+                        <p class="card-text">Sekhar Kammula is a prominent figure in Indian cinema, particularly in
+                            Telugu
+                            cinema. He is acclaimed for his directorial prowess, having garnered two Filmfare Awards
+                            South
+                            and six state Nandi Awards for his directional works. Kammula's journey began with the
+                            independent film Dollar Dreams (2000), which earned him the National Film Award for Best
+                            First
+                            film of a director. He holds Master of Science and Master of Fine Arts degrees from Rutgers
+                            University and Howard University, respectively. Notable among his critically and
+                            commercially
+                            successful Telugu films are Anand (2004), Godavari (2006), Happy Days (2007), Leader (2010),
+                            Fidaa (2017), and Love Story (2021).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="card text-center" id="c" style="background-color: #ffe5cc;">
+                    <!-- Light peach background -->
+                    <div class="card-header c"><span id="font2">KOMATIREDDY VENKAT REDDY</span></div>
+                    <div class="card-body">
+                        <img src="komati.png" alt="Image 1" class="photo">
+                        <p class="card-text">Komatireddy Venkat Reddy (born 23 May 1965) is an Indian politician from
+                            Telangana.
+                            He was a Member of Parliament of Bhuvanagiri Parliament Constituency from 2019. He is the
+                            star campaigner of Telangana Pradesh Congress Committee from 2022. He was Deputy Floor
+                            Leader, Telangana Congress Legislative Party and was elected again as MLA of Nalgonda
+                            Assembly constituency in 2023.
+                            He was was born on 23 May 1965 as the 8th of the nine children of a farmer, Papi Reddy in
+                            Brahmana Vellemla, Nalgonda district, Telangana.
+                            Komatireddy Venkat Reddy attended Amarajeevi Potti Sreeramulu High School, Malakpet,
+                            Hyderabad in 1980 for his SSC. He is a notable alumni of Chaitanya Bharathi Institute of
+                            Technology, Hyderabad in 1986 where he pursued Bachelors of Civil Engineering (BE).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="card text-center" id="c" style="background-color: #ffe5cc;">
+                    <!-- Light peach background -->
+                    <div class="card-header c"><span id="font2">KC NAVANEETH KUMAR</span></div>
+                    <div class="card-body">
+                        <img src="navaneeth.png" alt="Image 1" class="photo">
+                        <p class="card-text">KC Navaneeth Kumar, an illustrious graduate of Chaitanya Bharathi Institute
+                            of
+                            Technology (CBIT), is widely recognized for his remarkable contributions to the field of
+                            mechanical engineering. His groundbreaking research in renewable energy technologies has
+                            earned him global acclaim. As a visionary leader and innovator, he continues to inspire
+                            future generations of engineers to push the boundaries of what's possible in the pursuit of
+                            sustainable development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="card text-center" id="c" style="background-color: #ffe5cc;">
+                    <!-- Light peach background -->
+                    <div class="card-header c"><span id="font2">Y SATYANARAYANA CHOUDARY</span></div>
+                    <div class="card-body">
+                        <img src="satya.webp" alt="Image 1" class="photo">
+                        <p class="card-text">Y Satyanarayana Choudary, a distinguished alumnus of Chaitanya Bharathi
+                            Institute of Technology (CBIT), is celebrated for his exemplary contributions to the field
+                            of
+                            electronics and communication engineering. His pioneering work in telecommunications and
+                            signal processing has significantly advanced the capabilities of modern communication
+                            systems. Through his innovative research and leadership, he continues to shape the future of
+                            telecommunications technology.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="card text-center" id="c" style="background-color: #ffe5cc;">
+                    <!-- Light peach background -->
+                    <div class="card-header c"><span id="font2">RAVINDAR GUPTA</span></div>
+                    <div class="card-body">
+                        <img src="ravinra.webp" alt="Image 1" class="photo">
+                        <p class="card-text">Ravindar Gupta, an esteemed graduate of Chaitanya Bharathi Institute of
+                            Technology (CBIT), is widely recognized for his outstanding contributions to the field of
+                            computer science and engineering. His expertise in software development and data analytics
+                            has led to the creation of groundbreaking solutions that address complex challenges across
+                            various industries. As a visionary technologist, he continues to push the boundaries of
+                            innovation and inspire the next generation of engineers.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br><br>
+
+    <footer>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <a href="#"><i class="fa-brands fa-instagram icon"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter icon"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook icon"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin icon"></i></a>
+            </div>
+            <div class="col"></div>
+        </div>
+        <p>&copy; 2024 Campus Query. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/569c838bee.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
